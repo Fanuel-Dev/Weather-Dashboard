@@ -16,7 +16,7 @@
 
 ### Live Weather Dashboard & Hourly Track
 <!-- Replace this placeholder URL with your real cropped screenshot once uploaded to GitHub -->
-![Aloft Workspace Interface](https://raw.githubusercontent.com/yourusername/aloft/main/assets/screenshots/dashboard-preview.png)
+![Aloft Workspace Interface](timer.png)
 
 ### 🎥 Atmospheric Interface Walkthrough
 > **Watch Aloft in action:** Click the workspace preview below to see dynamic city lookups, real-time forecast rendering, and ambient weather particle effects executing without page reloads.
