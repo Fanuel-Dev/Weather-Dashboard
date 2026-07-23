@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aloft — Weather Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="sky-canvas"></canvas>
+<div id="sun-moon"></div>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="mark">◐</span> Aloft</div>
+    <div id="suggestions">
+      <div class="searchbar">
+        <input id="cityInput" type="text" placeholder="Search a city…" autocomplete="off">
+        <button id="locbtn2" class="locbtn" title="Use my location">⌖</button>
+        <button id="searchBtn">Go</button>
+      </div>
+      <div class="sugg-list" id="suggList"></div>
+    </div>
+  </header>
+
+  <div id="statusArea" class="status">Finding a place to start… <span id="statusDetail"></span></div>
+
+  <div id="dashboard" class="hidden">
+    <div class="hero">
+      <div class="hero-main">
+        <div class="place"><span id="placeName">—</span><span class="country" id="placeCountry"></span></div>
+        <div class="reading"><span id="tempNow">--</span><span class="unit" id="tempUnit">°C</span></div>
+        <div class="condition" id="conditionText">—</div>
+        <div class="feels">feels like <span id="feelsLike">--</span>°</div>
+        <div class="hilo">
+          <span>high <b id="hiToday">--</b>°</span>
+          <span>low <b id="loToday">--</b>°</span>
+          <span>updated <b id="updatedAt">--</b></span>
+        </div>
+      </div>
+      <div class="hero-icon" id="heroIcon"></div>
+    </div>
+
+    <div class="sec-label">Next 24 hours</div>
+    <div class="hourly-strip" id="hourlyStrip"></div>
+
+    <div class="sec-label">5-day outlook</div>
+    <div class="daily" id="dailyList"></div>
+
+    <div class="sec-label">Conditions</div>
+    <div class="dials" id="dialGrid"></div>
+  </div>
+
+  <footer>Data from Open‑Meteo · No account, no key, just weather</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
